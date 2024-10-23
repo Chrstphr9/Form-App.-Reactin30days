@@ -3,9 +3,11 @@ import "./formInput.css"
 
 const FormInput = (props) => {
   return (
-    <div className='forminput  '>
+    <div className='forminput'>
         {/* <label>Username</label> */}
-        <input placeholder={props.placeholder}/>
+        <input ref={props.refer} placeholder={props.placeholder}
+        
+        />
     </div>
   )
 }
