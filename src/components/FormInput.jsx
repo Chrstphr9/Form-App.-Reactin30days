@@ -6,7 +6,7 @@ const FormInput = (props) => {
   return (
     <div className='forminput'>
         <label>{label}</label>
-        <input {...inputProps} onChange={onC hange}  />
+        <input {...inputProps} onChange={onChange}  />
     </div>
   )
 }
