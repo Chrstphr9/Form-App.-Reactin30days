@@ -36,16 +36,16 @@ const App = () => {
     {
       id:4,
       name:"password",
-      type:"text",
-      placeholder:"passowrd",
-      label:"password"
+      type:"password",
+      placeholder:"Passowrd",
+      label:"Password"
     },
     {
       id:5,
       name:"confirmPassword",
-      type:"text",
-      placeholder:"confirmPassword",
-      label:"confirmPassword"
+      type:"password",
+      placeholder:"Confirm Password",
+      label:"Confirm Password"
     },
   ]
 
