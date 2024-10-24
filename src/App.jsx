@@ -20,28 +20,28 @@ const App = () => {
       label:"username"
     },
     {
-      id:1,
+      id:2,
       name:"username",
       type:"text",
       placeholder:"username",
       label:"username"
     },
     {
-      id:1,
+      id:3,
       name:"birthday",
       type:"text",
       placeholder:"birthday",
       label:"birthday"
     },
     {
-      id:1,
+      id:4,
       name:"password",
       type:"text",
       placeholder:"passowrd",
       label:"password"
     },
     {
-      id:1,
+      id:5,
       name:"confirmPassword",
       type:"text",
       placeholder:"confirmPassword",
