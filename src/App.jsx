@@ -3,7 +3,7 @@ import './App.css'
 import FormInput from "./components/FormInput"
 
 const App = () => {
-  const [value, setValue] = useState({
+  const [values, setValues] = useState({
     username:"",
     email:"",
     birthday:"",
@@ -56,10 +56,10 @@ const App = () => {
   return (
     <div className="app">
       <form onSubmit={handleSubmit}>
-        <FormInput name="username" placeholder="Username" />
-        <FormInput placeholder="Email" />
-        <FormInput placeholder="Full Name" />
-        <FormInput placeholder="Last Name" />
+        {inputs((input)=> (
+          <FormInput key={input.id} {...input} value={values[input.name]}/>
+        ))}
+        
         <button>Submit</button>
       </form>
     </div>
