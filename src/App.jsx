@@ -21,10 +21,10 @@ const App = () => {
     },
     {
       id:2,
-      name:"username",
+      name:"email",
       type:"text",
-      placeholder:"username",
-      label:"username"
+      placeholder:"email",
+      label:"email"
     },
     {
       id:3,
@@ -47,17 +47,21 @@ const App = () => {
       placeholder:"Confirm Password",
       label:"Confirm Password"
     },
-  ]
+  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  }
+
+  const onChange = (e)=> {
+    setValues({...values, [e.target.name]: e.target.value})
   }
   
   return (
     <div className="app">
       <form onSubmit={handleSubmit}>
-        {inputs((input)=> (
-          <FormInput key={input.id} {...input} value={values[input.name]}/>
+        {inputs.map((input)=> (
+          <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/>
         ))}
         
         <button>Submit</button>
